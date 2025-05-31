@@ -12,7 +12,10 @@
 #Then you print out a simple "menu" showing the items and their prices.
 
 
-introduction = "Welcome to the Mini Store!"
+
+#--------------------------------------------------------------------------------------------------------------------------------------------------------
+# Mini Store Price List
+introduction = "Welcome to the Mini Store!\n"
 print(introduction)
 
 price_list_description = "Here is what we have today:\n"
@@ -28,6 +31,8 @@ print(f"3. Milk - ${Milk}\n")
 
 display_thanks= "Thank you for visiting!"
 print(display_thanks)
+
+#--------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 

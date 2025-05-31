@@ -35,3 +35,32 @@ age = str(age)
 
 age += "1"
 print(age)
+
+name = bool(name)
+print(type(name))
+
+
+#Re-watching
+
+name = "Danial Larusso"
+age = "41"
+gpa = 1.6
+is_student = False
+
+age += "1"
+
+print(type(name))
+print(type(age))
+print(type(gpa))
+print(type(is_student))
+
+
+gpa = int(gpa)
+print(gpa)
+
+name = bool(name)
+print(name)
+
+age = str(age)
+print(age)
+(print(type(age)))
