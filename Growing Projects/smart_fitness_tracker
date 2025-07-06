@@ -1,0 +1,69 @@
+"""
+Project Title: Smart Fitness Tracker (Mini Version)
+📋 Requirements:
+Ask the user for their name.
+
+Ask for weight and unit (Kg or Lb).
+
+Convert weight to kg if it's in pounds.
+
+Ask for height in meters.
+
+Calculate BMI using the formula:
+BMI = weight / (height ** 2)
+
+Use if statements to show:
+
+Underweight (BMI < 18.5)
+
+Normal (18.5 ≤ BMI < 25)
+
+Overweight (BMI ≥ 25)
+
+Show a final summary using print() and round().
+
+
+"""
+#Convert to lbs = multiply 2.2
+#Convert to kg = multiply 0.454
+
+
+
+name = input("Enter your name: ")
+weight = float(input("Enter your weight: "))
+unit = input("Is this in (K)g or (L)b? ")
+height = float(input("Enter your height in meters: "))
+
+
+
+if unit == "L":
+    weight = weight / 2.205
+    print(f"The weight is converted to {round(weight, 2)} kg")
+elif unit == "K":
+    print(f"The weight is already in {weight} kg ")
+else:
+    print("Invalid input\n")
+
+
+print("LETS CALCULATE YOUR BMI:\n")
+
+weight = weight 
+height = height
+BMI = weight / pow(height, 2)
+print(f"Your BMI is {BMI}")
+
+if BMI < 18.5:
+    print("You are underweight!\n")
+elif 18.5 < BMI < 25:
+    print("Your weight is normal\n")
+elif BMI > 25:
+    print("You are overweight!\n")
+else:
+    ("No BMI to calculate\n")
+
+print("------SUMMARY-------\n")
+
+print(f"Name: {name}")
+print(f"Weight: {weight} kg")
+print(f"Height: {height}")
+print(f"BMI: {BMI}")

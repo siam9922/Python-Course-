@@ -1,0 +1,105 @@
+
+Hasan@DESKTOP-VU3PED0 MINGW64 ~/OneDrive/Desktop/Siam Hasan Programming Documents/Test Folder
+$ git init
+Initialized empty Git repository in C:/Users/Hasan/OneDrive/Desktop/Siam Hasan P
+rogramming Documents/Test Folder/.git/
+
+Hasan@DESKTOP-VU3PED0 MINGW64 ~/OneDrive/Desktop/Siam Hasan Programming Documents/Test Folder (main)
+$ ls -al
+total 13
+drwxr-xr-x 1 Hasan 197121  0 Apr 28 12:39 ./
+drwxr-xr-x 1 Hasan 197121  0 Apr 28 12:32 ../
+drwxr-xr-x 1 Hasan 197121  0 Apr 28 12:39 .git/
+-rw-r--r-- 1 Hasan 197121 92 Apr 28 12:29 test.js
+
+Hasan@DESKTOP-VU3PED0 MINGW64 ~/OneDrive/Desktop/Siam Hasan Programming Documents/Test Folder (main)
+$ git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        test.js
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Hasan@DESKTOP-VU3PED0 MINGW64 ~/OneDrive/Desktop/Siam Hasan Programming Documents/Test Folder (main)
+$ git add .
+
+Hasan@DESKTOP-VU3PED0 MINGW64 ~/OneDrive/Desktop/Siam Hasan Programming Documents/Test Folder (main)
+$ git add test.js
+
+Hasan@DESKTOP-VU3PED0 MINGW64 ~/OneDrive/Desktop/Siam Hasan Programming Documents/Test Folder (main)
+$ git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   test.js
+
+
+Hasan@DESKTOP-VU3PED0 MINGW64 ~/OneDrive/Desktop/Siam Hasan Programming Documents/Test Folder (main)
+$ git commit -m "test"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Hasan@DESKTOP-VU3PED0.(none)')
+
+Hasan@DESKTOP-VU3PED0 MINGW64 ~/OneDrive/Desktop/Siam Hasan Programming Documents/Test Folder (main)
+$ ^C
+
+Hasan@DESKTOP-VU3PED0 MINGW64 ~/OneDrive/Desktop/Siam Hasan Programming Documents/Test Folder (main)
+$ ^C
+
+
+Hasan@DESKTOP-VU3PED0 MINGW64 ~/OneDrive/Desktop/Siam Hasan Programming Documents/Test Folder (main)
+$ ^C
+
+Hasan@DESKTOP-VU3PED0 MINGW64 ~/OneDrive/Desktop/Siam Hasan Programming Documents/Test Folder (main)
+$ ^[[200~git config --global user.email "you@example.com"
+bash: $'\E[200~git': command not found
+
+Hasan@DESKTOP-VU3PED0 MINGW64 ~/OneDrive/Desktop/Siam Hasan Programming Documents/Test Folder (main)
+$  git config --global user.email "siamhasan773@gmail.com"
+
+Hasan@DESKTOP-VU3PED0 MINGW64 ~/OneDrive/Desktop/Siam Hasan Programming Documents/Test Folder (main)
+$  git config --global user.name "Siam Hasan"
+
+Hasan@DESKTOP-VU3PED0 MINGW64 ~/OneDrive/Desktop/Siam Hasan Programming Documents/Test Folder (main)
+$ git commit -m "test"
+[main (root-commit) 0225fcf] test
+ 1 file changed, 3 insertions(+)
+ create mode 100644 test.js
+
+Hasan@DESKTOP-VU3PED0 MINGW64 ~/OneDrive/Desktop/Siam Hasan Programming Documents/Test Folder (main)
+$ git branch -M main
+
+Hasan@DESKTOP-VU3PED0 MINGW64 ~/OneDrive/Desktop/Siam Hasan Programming Documents/Test Folder (main)
+$ git remote add origin https://github.com/siam9922/Testing-code.git
+
+Hasan@DESKTOP-VU3PED0 MINGW64 ~/OneDrive/Desktop/Siam Hasan Programming Documents/Test Folder (main)
+$ git push -u origin main
+info: please complete authentication in your browser...
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 285 bytes | 142.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/siam9922/Testing-code.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+Hasan@DESKTOP-VU3PED0 MINGW64 ~/OneDrive/Desktop/Siam Hasan Programming Documents/Test Folder (main)

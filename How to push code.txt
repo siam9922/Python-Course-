@@ -1,0 +1,58 @@
+STEPS TO COMMIT CODE IN A GITHUB REPOSITORY
+If there is global issues: try these commands 
+ 
+ git config --global user.email "you@example.com"
+ git config --global user.name "Your Name"
+
+STEP 1. 
+
+Start with "git init"
+You can choose to add a "git add README.md"
+
+git commands to try:
+ls - al - to check the files 
+git status to check which files aren't tracked
+
+ALWAYS MAKE SURE:
+
+Either do this or put the file name (ex. git add test.js)
+git add .
+
+STEP 2.
+
+Then do:
+git commit -m "first commit"
+
+STEP 3.
+
+Then do:
+git branch -M main
+
+
+STEP 4.
+
+Then do this make sure the repository link is different: 
+git remote add origin https://github.com/siam9922/Testing-code.git
+
+STEP 5.
+
+To push: 
+git push -u origin main
+
+
+
+
+For existing repository or if you pushed something before just do this: 
+
+
+STEP 1.
+
+git remote add origin https://github.com/siam9922/Testing-code.git
+
+STEP 2.
+
+git branch -M main
+
+
+STEP 3.
+git push -u origin main
