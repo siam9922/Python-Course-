@@ -22,35 +22,59 @@ Overweight (BMI ≥ 25)
 
 Show a final summary using print() and round().
 
+✅ 1. Use or for flexible input
+Let your user type "k", "K", "l", or "L" — and your code should accept either version.
+
+✅ 2. Use and for health warnings
+After you calculate BMI, check if the person is overweight and has a low height. If both are true, give them an extra warning message.
+
+✅ 3. Use not to warn when BMI is not normal
+If the person’s BMI is not in the normal range, show a message saying:
+
+“You are not in a healthy range.”
+
+You can use not to flip the normal condition.
+
 
 """
 #Convert to lbs = multiply 2.2
 #Convert to kg = multiply 0.454
 
 
+print("===============================")
+print(     "SMART FITNESS TRACKER     ")
+print("===============================")
 
-name = input("Enter your name: ")
-weight = float(input("Enter your weight: "))
+print()
+name = input("ENTER YOUR NAME: ")
+weight = float(input("ENTER YOUR WEIGHT: "))
 unit = input("Is this in (K)g or (L)b? ")
-height = float(input("Enter your height in meters: "))
+
+if unit == "K" or unit == "k":
+    print()
+elif unit == "L" or unit == "l":
+    print()
+
+height = float(input("ENTER YOUR HEIGHT IN METERS: "))
 
 
 
 if unit == "L":
     weight = weight / 2.205
-    print(f"The weight is converted to {round(weight, 2)} kg")
+    print(f"The weight is converted to {round(weight, 2)} kg\n")
 elif unit == "K":
-    print(f"The weight is already in {weight} kg ")
+    print(f"The weight is already in {weight} kg\n")
 else:
     print("Invalid input\n")
 
-
+print()
 print("LETS CALCULATE YOUR BMI:\n")
 
 weight = weight 
 height = height
 BMI = weight / pow(height, 2)
 print(f"Your BMI is {BMI}")
+
 
 if BMI < 18.5:
     print("You are underweight!\n")
@@ -61,9 +85,25 @@ elif BMI > 25:
 else:
     ("No BMI to calculate\n")
 
-print("------SUMMARY-------\n")
+if weight >= 80 and height >= 1.75:
+    print("WARNING: BMI RESULTS SHOW OVERWEIGHT AND LOW HEIGHT\n")
+elif weight <= 80 and height >= 1.75:
+    print("APPROVED: BMI IS NORMAL AND HEIGHT IS AVERAGE\n")
 
+if not BMI >= 20:
+    print("You are in healthy range\n")
+elif not BMI >= 26:
+     print("You are not in healthy range\n")
+
+
+
+print("-----------------------------")
+print("[      SUMMARY               ]\n") 
 print(f"Name: {name}")
 print(f"Weight: {weight} kg")
 print(f"Height: {height}")
 print(f"BMI: {BMI}")
+print("-----------------------------")
+print()
+
+print(f"Thank you for using our fitness tracker {name}!")
